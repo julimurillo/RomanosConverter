@@ -93,6 +93,19 @@ public class RomanNumeralConverterTest {
 			fail();
 		}
 	}
+	
+	@Test
+	public void testDeberiaBotarExcepcionsipasoXVVI() {
+		try {
+			conv.convert("XVVI");
+			fail();
+		} catch (IllegalArgumentException e) {
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			fail();
+		}
+	}
 
 	@Test
 	public void testDeberiaDevolver1SiPasoI() {
