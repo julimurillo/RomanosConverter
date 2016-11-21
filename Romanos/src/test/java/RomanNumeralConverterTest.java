@@ -192,6 +192,11 @@ public class RomanNumeralConverterTest {
 	public void testDeberiaDevolver40SiPasoXL() {
 		elaborarPrueba("XL", 40);
 	}
+	
+	@Test
+	public void testDeberiaDevolver45SiPasoXLV() {
+		elaborarPrueba("XLV", 45);
+	}
 
 	@Test
 	public void testDeberiaDevolver123SiPasoCXXIII() {
